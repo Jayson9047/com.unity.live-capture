@@ -1,0 +1,40 @@
+{
+  "name": "com.unity.live-capture",
+  "displayName": "Live Capture",
+  "version": "3.0.0-pre.6",
+  "unity": "2020.3",
+  "unityRelease": "16f1",
+  "description": "Use the Live Capture package to connect to the Unity Virtual Camera and Unity Face Capture companion apps to capture and record camera motion and face performances.",
+  "keywords": [
+    "virtual production",
+    "virtual camera",
+    "live capture",
+    "vcam"
+  ],
+  "category": "Unity",
+  "dependencies": {
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.timeline": "1.6.4",
+    "com.unity.ugui": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "ARKit Face Sample",
+      "description": "A simple face for demonstrating face mocap from ARKit. Requires material upgrade if using with URP or HDRP.",
+      "path": "Samples~/ARKit Face Sample"
+    }
+  ],
+  "_upm": {
+    "changelog": "### Fix\n- Ensure that synchronized VirtualCamera and FaceCapture produce recordings aligned to the initial time offset set in Timeline.\n- Improved recording accuracy in VirtualCamera when using motion damping.\n- Ensure the network client can reconnect after a graceful server restart.\n- Make sure the preview refreshes in the Unity Editor when the user selects a Take in the companion app library.\n- Release of invalid GC handle when entering play mode with a Take Recorder."
+  },
+  "upmCi": {
+    "footprint": "cb34c0134aa11e656f04eb26d37ef8e5b270120d"
+  },
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/VirtualProduction.git",
+    "type": "git",
+    "revision": "7e2efad0623ea97b44e23a12f7050a9c6aff46e7"
+  }
+}
